@@ -1,0 +1,30 @@
+input[type="checkbox"] {
+  width: 30px;
+  height: 30px;
+  background: white;
+  border-radius: 5px;
+  border: 2px solid #555;
+}
+
+.grocery-list-container {
+  text-align: center;
+}
+
+.grocery-list {
+  list-style: none;
+  padding: 0;
+}
+
+/* .grocery-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px;
+}
+
+.checked {
+  text-decoration: line-through;
+}
+
+.add-item-container {
+  margin-top: 10px;
+} */
