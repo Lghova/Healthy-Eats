@@ -59,22 +59,27 @@ const GroceryList: React.FC = () => {
                 margin: "5px",
               }}
             >
-              <label>
-                <input
-                  type="checkbox"
-                  checked={item.checked}
-                  onChange={() => handleCheck(index)}
-                />
-                <span
-                  style={{
-                    textDecoration: item.checked ? "line-through" : "none",
-                  }}
-                >
-                  {item.name}
-                </span>
-              </label>
-
-              <button onClick={() => handleRemoveItem(index)}>Remove</button>
+              <input
+                type="checkbox"
+                checked={item.checked}
+                onChange={() => handleCheck(index)}
+              />
+              <p
+                style={{
+                  textDecoration: item.checked ? "line-through" : "none",
+                  marginTop: 0,
+                }}
+              >
+                {item.name}
+              </p>
+              <button
+                style={{
+                  margin: 0,
+                }}
+                onClick={() => handleRemoveItem(index)}
+              >
+                Remove
+              </button>
             </li>
           ))}
         </ul>
