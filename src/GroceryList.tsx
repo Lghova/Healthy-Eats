@@ -40,8 +40,8 @@ const GroceryList: React.FC = () => {
     }
   };
 
-  const handleRemoveItem = (index: number) => {
-    const updatedItems = items.filter((_, i) => i !== index);
+  const handleRemoveItem = (itemToRemove: number) => {
+    const updatedItems = items.filter((_, i) => i !== itemToRemove);
     setItems(updatedItems);
   };
 
